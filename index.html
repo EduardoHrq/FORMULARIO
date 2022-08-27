@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/gif" href="https://pngimg.com/uploads/nike/nike_PNG11.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Formulário</h1>
+
+        <p>Complete suas informações!</p>
+
+        <p>INSCRIÇÕES ABERTAS!</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <legend><strong>DADOS BASICOS</strong></legend>
+
+            <div class="campo">
+
+                <label for="nome"><strong>Nome Completo:</strong></label>
+                <input  type="text" name="nome" id="nome" class="in" required placeholder="Digite o seu nome aqui">
+
+            </div>
+
+            <br>
+
+            <div class="campo">
+                
+                <label for="email"><strong>E-mail (você usará o mesmo durante o cadastro):</strong></label>
+                <input type="email" name="E-mail" id="email" class="in" required placeholder="Informe o seu E-mail aqui">
+
+            </div>
+
+            <br>
+
+            <div class="campo">
+                <label for="celular"><strong>Celular (Whatsapp):</strong></label>
+                <input type="number" name="Celular" id="celular" class="in" required placeholder="Número sem ' ( ) ', ' + ' e ' - ' ">
+            </div>
+
+            <br>
+
+            <div class="campo">
+
+                <label for="nascimento"><strong>Data de Nascimento:</strong></label>
+                <input type="date" name="Data de Nascimento" id="nascimento" class="in" required>
+
+            </div>
+
+        </fieldset>
+
+            <br>
+
+        <fieldset class="grupo">
+            <legend><strong>OUTROS</strong></legend>
+        
+            <div class="campo" id="txt">
+
+                <label for="frontend"><strong>Qual é o seu objetivo:</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked> Ser programador frontend
+                </label>
+
+                <label for="backend">
+                    <input type="radio" name="devweb" value="backend"> Ser programador backend
+                </label>
+                
+                <label for="fullstack">
+                    <input type="radio" name="devweb" value="fullstack"> Ser programador fullstack
+                </label>
+
+            </div>
+
+            <br>
+
+            <div class="campo" id="txt">
+
+                <label for="linkedin"><strong>Como ficou sabendo do nosso processo seletivo?</strong></label>
+                <label>
+                    <input type="radio" name="rede" value="linkedin" checked> LinkedIn
+                </label>
+
+                <label for="facebook">
+                    <input type="radio" name="rede" value="facebook"> Facebook
+                </label>
+                
+                <label for="instagram">
+                    <input type="radio" name="rede" value="instagram"> Instagram
+                </label>
+
+            </div>
+
+            <br>
+
+            <div class="campo" id="txt">
+
+                <label for="HTML"><strong>Conhece ou já trabalhou com alguma dessa tecnologias?</strong></label>
+                <label>
+                    <input type="checkbox" name="tecnologia" value="HTML"> HTML
+                </label>
+
+                <label for="CSS">
+                    <label>
+                        <input type="checkbox" name="tecnologia" value="CSS"> CSS
+                    </label>
+                </label>
+                
+                <label for="JavaScript">
+                    <label>
+                        <input type="checkbox" name="tecnologia" value="JavaScript"> JavaScript 
+                    </label>
+                </label>
+
+                <label for="Python">
+                    <label>
+                        <input type="checkbox" name="tecnologia" value="Python"> Python 
+                    </label>
+                </label>
+
+                <label for="PHP">
+                    <label>
+                        <input type="checkbox" name="tecnologia" value="PHP"> PHP   
+                    </label>
+                </label>
+                
+                <label for="JAVA">
+                    <label>
+                        <input type="checkbox" name="tecnologia" value="JAVA"> JAVA 
+                    </label>
+                </label>
+
+                <label for="Ruby">
+                    <label>
+                        <input type="checkbox" name="tecnologia" value="Ruby"> Ruby
+
+                    </label>
+                </label>
+
+            </div>
+
+            <br>
+
+            <div class="campo">
+                <p><Strong>Concorda com a nossa política de privacidade?</Strong></p>
+                <a href="#">Política de privacidade</a>
+            </div>
+
+            <br>
+
+            <div class="campo">
+                <p><Strong>Conte-nos um pouco da sua história</Strong></p>
+                <textarea name="História" id="txtarea"></textarea>
+            </div>
+
+        </fieldset>
+
+        <input type="submit" value="Inscreva-se" id="btnEnviar">
+
+    </form>
+
+    
+
+
+</body>
+</html>

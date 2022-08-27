@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    transition: box-shadow 200ms ease-in-out;
+}
+
+body{
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto;
+    color: #fff;  
+}
+
+::-webkit-scrollbar{
+    width: 1vw;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 1vw;
+}
+
+
+.header{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.in{
+    border: none;
+    border-radius: 0.7vw;
+    padding: 4%;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1em;
+    margin: 1vh 0;
+}
+
+.in[type="date"], input[type="radio"], input[type="checkbox"]{
+    cursor: pointer;
+    accent-color: rgb(0, 255, 0);
+}
+
+.in:hover{
+    box-shadow: 0 0 0 5px black;
+}
+
+.grupo{
+    border: none;
+    background-color: rgba(80, 80, 80);
+    width: 40vw;
+    padding: 7%;
+    border-radius: 3%;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 0;
+}
+
+#txt label{
+    cursor: pointer;
+}
+
+#txtarea{
+    border: none;
+    border-radius: 0.5vw;
+    padding: 2%;
+    font-size: 1.2em;
+    height: 10vh;
+}
+
+#txtarea:hover{
+    box-shadow: 0 0 1px 2px black;  
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btnEnviar{
+    border: none;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    height: 7vh;
+    width: 30vw;
+    border-radius: 0.7vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    font-weight: 900;
+    font-size: large;
+}
+
+#btnEnviar:hover{
+    box-shadow: 0 0 0 5px white;
+}
